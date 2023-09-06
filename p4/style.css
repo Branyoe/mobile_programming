@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.border{
+  outline: 1px solid black;
+}
+
+.nav{
+  width: 100vw;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav > i{
+  font-size: 1.6rem;
+}
+
+.nav-logo{
+  height: 80%;
+}
