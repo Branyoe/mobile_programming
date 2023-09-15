@@ -1,0 +1,176 @@
+.hr-with-text {
+  display: flex;
+  align-items: center;
+}
+
+.hr-with-text span {
+  font-size: 2vw;
+  margin-right: 10px; 
+  color: red;
+  font-style: italic; 
+  font-family: 'Black Ops One', cursive;; 
+}
+
+.hr-with-text .hr {
+  flex-grow: 1;
+  height: 1px;
+  background-color: gray;
+}
+  
+hr{
+  padding: 1px;
+}
+
+  /* Estilos para la clase card-title */
+.card-title-primary {
+  font-size: 1.5vw;
+  padding-top: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.card-title-second, .card-title-third{
+  font-size: 1vw;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+/* Estilos para la clase card-title-red */
+.card-title-red-primary {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #c00c00;
+}
+.card-title-red-second, .card-title-red-third {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #c00c00;
+}
+
+  /* Tamaño de fuente predeterminado para la tarjeta */
+.card, .third-card, .second-card{
+  border: none !important;
+}
+.primary-card{
+  font-size: 4vw;
+  line-height: 1; 
+}
+.second-card, .third-card {
+  font-size: 2vw; 
+}
+
+
+  /* Media query para pantallas medianas */
+  @media screen and (max-width: 820px) {
+    .primary-card {
+      font-size: 4vw;
+      line-height: 1;
+    } .third-card, .second-card{
+      font-size: 2vw;
+    }
+
+
+    .card-title-red-primary {
+      font-size: 2vw;
+    } .card-title-red-second, .card-title-red-third {
+      font-size: 1.5vw;
+      font-weight: bold;
+    }
+
+
+    .card-title-second, .card-title-third, .card-title-primary{
+      font-size: 1.5vw;
+    }
+    .hr-with-text span {
+      font-size: 4vw;
+    }
+  }
+
+  /* Media query para pantallas pequeñas */
+  @media screen and (max-width: 480px) {
+    .primary-card {
+      font-size: 4vw;
+    }.third-card, .second-card {
+      font-size: 3vw;
+    }
+
+
+    .card-title-red-primary{
+      font-size: 3vw;
+    }.card-title-red-second, .card-title-red-third {
+      font-size: 2.5vw;
+      font-weight: bold;
+    }
+
+
+    .card-title-second, .card-title-third, .card-title-primary{
+      font-size: 2.8vw;
+    }
+  }
+
+  
+
+  
+  /* Estilo para el enlace cuando se pasa el cursor sobre él */
+  .card-link {
+    font-family: 'Barlow Semi Condensed', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    cursor: pointer !important;
+  }.card-link:hover {
+    color:gray;
+  }
+
+
+  
+  /* Estilo para la noticia pequeña */
+  #noticia_pequeña {
+    background-color: #f5f7fa;
+    padding: 15px; 
+    margin: .5rem; 
+  }
+
+  #second-card, #third-card{
+    background-color: #f5f7fa;
+  }
+  /* Estilo para la imagen */
+  #noticia_pequeña .card-img-container {
+    overflow: hidden;
+  }
+  
+
+
+
+
+ 
+.video-link {
+  position: relative;
+  display: inline-block;
+  text-align: center; /* Centra el contenido horizontalmente */
+  color: white; /* Color por defecto del símbolo */
+ }
+
+
+/* Estilo para el símbolo */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined', sans-serif;
+  font-size: 64px !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Cambiar el color del símbolo al pasar el cursor */
+.video-link:hover .material-symbols-outlined {
+  color: red; 
+}
+
+
+
+
+.text-collapse {
+  font-size: 2vw;
+  background-color: rgba(22, 20, 20, 0.5);
+}

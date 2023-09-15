@@ -7,6 +7,8 @@
 @import url('./utils/back-ground-colors.css');
 @import url('./nav-bar.css');
 @import url('./utils/gap.css');
+@import url('./oscar.css');
+@import url('./body.css');
 
 
 *{
