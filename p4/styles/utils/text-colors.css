@@ -1,0 +1,11 @@
+.text-white{
+  color: var(--white);
+}
+
+.text-blue-gray{
+  color: var(--blue-gray);
+}
+
+.text-light-gray{
+  color: var(--light-gray);
+}

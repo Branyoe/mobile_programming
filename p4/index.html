@@ -4,18 +4,306 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/index.css">
   <script src="https://kit.fontawesome.com/23cffe43f8.js" crossorigin="anonymous"></script>
   </title>
 </head>
 
 <body>
-  <div class="nav border">
-    <i id="nav-menu" class="fa-solid fa-bars"></i>
-    <img class="nav-logo" src="./assets/marca-logo.webp" alt="">
-    <i class="fa-solid fa-user"></i>
-  </div>
+  <!-- nav-bar -->
+  <div class="nav pl-1 pr-1">
+    <!-- menu button -->
+    <div class="nav-button">
+      <i id="nav-menu-button" class="nav-menu-icon fa-solid fa-bars"></i>
+    </div>
 
+    <!-- logo -->
+    <img class="nav-logo" src="./assets/marca-logo.webp" alt="">
+
+    <!-- user button -->
+    <div class="nav-button">
+      <i class="user-btn fa-solid fa-user"></i>
+    </div>
+
+
+    <!-- nav menu -->
+    <div id="nav-menu" class="p-1 nav-menu-container">
+      
+      <!-- futbol tab -->
+      <div class="nav-tab">
+        <div 
+          id="dropdown-button-fut" 
+          class="dropdown-button"
+        >
+          <h3>Fútbol</h3>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div id="dropdown-menu-fut" class="dropdown-menu pl-1 hidden">
+          <!-- dropdown mexico -->
+          <div id="dropdown-button-mex" class="dropdown-button">
+            <h4>Mexico</h4>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div 
+            id="dropdown-menu-mex" 
+            class="pl-1 pt-1 gap-1 hidden text-white"
+          >
+            <div class="nav-tab-section">  
+              <h5>Liga MX</h5>
+              <ul class="text-light-gray">
+                <li>Calendario - apertura</li>
+                <li>Posiciones - apertura</li>
+                <li>Calendario - clausura</li>
+                <li>Posiciones - clausura</li>
+                <li>Resultados</li>
+              </ul>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Liga de Expansión</h5>
+              <ul class="text-light-gray">
+                <li>Calendario - apertura</li>
+                <li>Posiciones - apertura</li>
+                <li>Calendario - clausura</li>
+                <li>Posiciones - clausura</li>
+                <li>Resultados</li>
+              </ul>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Concachampions</h5>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Mexicanos por el mundo</h5>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Fútbol Femenil</h5>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Selección Mexicana</h5>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Fútbol estufa</h5>
+            </div>
+          </div>
+          
+          <!-- dropdown america -->
+          <div id="dropdown-button-america" class="dropdown-button">
+            <h4>América</h4>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div 
+            id="dropdown-menu-america" 
+            class="pl-1 pt-1 gap-1 hidden text-white"
+          >
+            <div class="nav-tab-section">  
+              <h5>MLS</h5>
+              <ul class="text-light-gray">
+                <li>Calendario</li>
+                <li>Posiciones</li>
+                <li>Resultados</li>
+              </ul>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Conmebol Libertadores</h5>
+              <ul class="text-light-gray">
+                <li>Calendario</li>
+                <li>Posiciones</li>
+              </ul>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Concacaf Nations League</h5>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Leagues Cup</h5>
+              <ul class="text-light-gray">
+                <li>Calendario</li>
+                <li>Posiciones</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- dropdown europa -->
+          <div id="dropdown-button-europa" class="dropdown-button">
+            <h4>Europa</h4>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div 
+            id="dropdown-menu-europa" 
+            class="pl-1 pt-1 gap-1 hidden text-white"
+          >
+            <div class="nav-tab-section">  
+              <h5>Liga MX</h5>
+              <ul class="text-light-gray">
+                <li>Calendario - apertura</li>
+                <li>Posiciones - apertura</li>
+                <li>Calendario - clausura</li>
+                <li>Posiciones - clausura</li>
+                <li>Resultados</li>
+              </ul>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Liga de Expansión</h5>
+              <ul class="text-light-gray">
+                <li>Calendario - apertura</li>
+                <li>Posiciones - apertura</li>
+                <li>Calendario - clausura</li>
+                <li>Posiciones - clausura</li>
+                <li>Resultados</li>
+              </ul>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Concachampions</h5>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Mexicanos por el mundo</h5>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Fútbol Femenil</h5>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Selección Mexicana</h5>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Fútbol estufa</h5>
+            </div>
+          </div>
+
+          <!-- dropdown more -->
+          <div id="dropdown-button-more" class="dropdown-button">
+            <h4>Y además</h4>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div 
+            id="dropdown-menu-more" 
+            class="pl-1 pt-1 gap-1 hidden text-white"
+          >
+            <div class="nav-tab-section">  
+              <h5>Liga MX</h5>
+              <ul class="text-light-gray">
+                <li>Calendario - apertura</li>
+                <li>Posiciones - apertura</li>
+                <li>Calendario - clausura</li>
+                <li>Posiciones - clausura</li>
+                <li>Resultados</li>
+              </ul>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Liga de Expansión</h5>
+              <ul class="text-light-gray">
+                <li>Calendario - apertura</li>
+                <li>Posiciones - apertura</li>
+                <li>Calendario - clausura</li>
+                <li>Posiciones - clausura</li>
+                <li>Resultados</li>
+              </ul>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Concachampions</h5>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Mexicanos por el mundo</h5>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Fútbol Femenil</h5>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Selección Mexicana</h5>
+            </div>
+            <div class="nav-tab-section">
+              <h5>Fútbol estufa</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- motor tab -->
+      <div class="nav-tab">
+        <div id="dropdown-button-motor" class="dropdown-button text-white hover-red">
+          <h3>Motor</h3>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div id="dropdown-menu-motor" class="gap-1 dropdown-menu pl-1 hidden text-white">
+          <div class="nav-tab-section">
+            <h5>F1</h5>
+            <ul class="text-light-gray">
+              <li>Calendario</li>
+              <li>Clasificación</li>
+              <li>Clasificación constructores</li>
+            </ul> 
+          </div>
+          <div class="nav-tab-section">
+            <h5>Motociclismo</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- boxeo tab -->
+      <div class="nav-tab hover-red">
+        <div class="dropdown-button text-white hover-red">
+          <h3>Boxeo</h3>
+        </div>
+      </div>
+
+      <!-- NFL tab -->
+      <div class="nav-tab">
+        <div id="dropdown-button-nfl" class="dropdown-button text-white hover-red">
+          <h3>NFL</h3>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div id="dropdown-menu-nfl" class="gap-1 dropdown-menu pl-1 hidden text-white">
+          <div class="nav-tab-section">
+            <h5>NFL</h5>
+            <ul class="text-light-gray">
+              <li>Calendario</li>
+              <li>Posiciones</li>
+              <li>Resultados</li>
+              <li>Superbowl</li>
+            </ul> 
+          </div>
+          <div class="nav-tab-section">
+            <h5>Motociclismo</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- other-sports tab -->
+      <div class="nav-tab">
+        <div id="dropdown-button-other" class="dropdown-button text-white hover-red">
+          <h3>Otros deportes</h3>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div id="dropdown-menu-other" class="gap-1 dropdown-menu pl-1 hidden text-white">
+          <div class="nav-tab-section">
+            <h5>Basquetbol</h5>
+            <ul class="text-light-gray">
+              <li>NBA</li>
+            </ul> 
+          </div>
+          <div class="nav-tab-section">
+            <h5>Béisbol</h5>
+            <ul class="text-light-gray">
+              <li>Calendario</li>
+              <li>Posiciones</li>
+            </ul> 
+          </div>
+          <div class="nav-tab-section">
+            <h5>Tenis</h5>
+            <ul class="text-light-gray">
+              <li>Abierto mexicano</li>
+            </ul> 
+          </div>
+          <div class="nav-tab-section">
+            <h5>Lucha libre</h5>
+          </div>
+          <div class="nav-tab-section">
+            <h5>UFC</h5>
+          </div>
+          <div class="nav-tab-section">
+            <h5>Juegos Centroamericanos</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script type="module" src="script.js"></script>
 </body>

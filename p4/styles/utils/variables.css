@@ -1,0 +1,8 @@
+:root{
+  --red: #CC0000;
+  --gray-hover: rgb(240, 225, 225);
+  --white: #fff;
+  --blue-gray: #5C6C7D;
+  --light-gray: #AEB6BF;
+  --light-hover: rgba(240, 225, 225, 0.081);
+}

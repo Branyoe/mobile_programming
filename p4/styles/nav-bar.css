@@ -1,0 +1,127 @@
+.nav{
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hover-red:hover{
+  color: var(--red);
+}
+
+.nav > i{
+  font-size: 1.6rem;
+}
+
+.nav-logo{
+  height: 80%;
+}
+
+.nav-menu-button{
+  width: 2.3rem;
+  height: 2.3rem;
+  color: var(--red);
+  padding: .3rem;
+  border: 1px solid var(--red);
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
+}
+
+.nav-menu:hover{
+  background-color: var(--gray-hover);
+}
+
+.nav-button{
+  width: 2.3rem;
+  height: 2.3rem;
+  color: var(--red);
+  padding: .3rem;
+  border: 1px solid var(--red);
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
+}
+
+.user-button{
+  font-size: 1.3rem;
+  display: grid;
+  place-items: center;
+}
+
+.user-btn:hover{
+  background-color: var(--gray-hover);
+}
+
+.nav-menu-container{
+  top: 3rem;
+  left: 0;
+  position: fixed;
+  z-index: 2;
+  background-color: #1b242cf8;
+  width: 100%;
+  height: 100%;
+  display: none;
+  gap: .3rem;
+  overflow-y: scroll;
+}
+
+.nav-tab{
+  padding: .3rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+/* nav-tab section */
+.nav-tab-section > h5{
+  font-size: 1rem;
+}
+
+.nav-tab-section ul{
+  list-style: none; 
+}
+
+.nav-tab-section li{
+  color: var(--light-gray); 
+}
+
+.nav-tab-section *:hover{
+  color: var(--red);
+}
+
+/* dropdown button */
+.dropdown-button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .3rem .5rem;
+  transition: all .3s;
+  border-radius: 5px;
+}
+
+.dropdown-button *{
+  transition: all .3s ease-in-out;
+  color: var(--white);
+}
+
+.dropdown-button-active{
+  background-color: var(--gray-hover);
+}
+
+.dropdown-button-active *{
+  transition: all .3s ease-in-out;
+}
+.dropdown-button-active > i{
+  transform: rotate(90deg);
+  color: var(--red);
+}
+
+.dropdown-button-active > h3,.dropdown-button-active > h4 {
+  color: var(--red);
+}
