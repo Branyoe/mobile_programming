@@ -1,9 +1,10 @@
 .nav{
-  position: sticky;
+  position: static;
+  padding: .3rem;
   top: 0;
   z-index: 10;
   background-color: #fff;
-  height: 3rem;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,8 +18,23 @@
   font-size: 1.6rem;
 }
 
-.nav-logo{
-  height: 80%;
+.logo-and-access{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  /* background-color: red; */
+}
+
+.access-container{
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-and-access > img{
+  height: calc(4rem - .6rem);
 }
 
 .nav-menu-button{
@@ -32,6 +48,7 @@
   place-items: center;
   font-size: 1.3rem;
 }
+
 
 .nav-menu:hover{
   background-color: var(--gray-hover);
@@ -53,6 +70,10 @@
   font-size: 1.3rem;
   display: grid;
   place-items: center;
+}
+
+.user-btn-text{
+  display: none;
 }
 
 .user-btn:hover{
@@ -125,4 +146,39 @@
 
 .dropdown-button-active > h3,.dropdown-button-active > h4 {
   color: var(--red);
+}
+
+@media (min-width: 576px) {
+  .nav-menu-button-md{
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .access-container{
+    display: flex;
+  }
+  .nav-menu-button{
+    display: none;
+    color: white;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-button{
+    width: auto;
+    display: flex;
+    gap: .4rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .user-btn{
+    font-size: .8rem;
+  }
+
+  .user-btn-text{
+    display: block;
+    font-size: .8rem;
+  }
 }

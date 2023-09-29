@@ -29,11 +29,11 @@
   background-color: #f0f0f0;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  gap: .3rem;
 }
 
 .reverse{
   grid-template-columns: 1fr 2fr;
-  gap: .3rem;
 }
 
 .md-notice > .img-container > img{
